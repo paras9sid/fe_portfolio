@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              <a class="nav-link" href="./projects.html">Projects</a>
+              <a class="nav-link" href="./projects.html" target="_blank">Projects</a>
               <a class="nav-link" href="./blog.html" target="_blank">Blog</a>
             </div>
           </div>
@@ -32,12 +32,14 @@
 
     <main class="container">
       <section class="introduction">
-        <div class="vh-100 d-flex flex-column justify-content-center align-items-center ">
+        <div class="vh-100 d-flex flex-column justify-content-center align-items-center text-center">
           <img class="rounded-circle shadow-lg" src="./media/coder.jpg" alt="">
           <p class="fs-4 mt-3">Hi I am Sidharth Jain</p>
           <p class="fs-4 fw-bold mb-1">Building Web applications</p>
-          <p class="mb-4 mw-650"> Python - Django // HTML-CSS-JS</p>
-          <button type="button" class="btn btn-dark">Connect With Me</button>
+          <p class="mb-4"> Python - Django // HTML-CSS-JS</p>
+          <a href="#contact">
+            <button type="button" class="btn btn-dark">Connect With Me</button>
+          </a>
         </div>
       </section>
 
@@ -54,7 +56,9 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum doloribus! Quis at possimus quaerat exercitationem deserunt rerum totam. Aut?
               </p>
-              <button type="button" class="btn btn-dark">Go To Projects</button>
+              <a href="./projects.html" target="_blank">
+                <button type="button" class="btn btn-dark">Go To Projects</button>
+              </a>
             </div>
         </div>
       </section>
@@ -68,14 +72,16 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum doloribus! Quis at possimus quaerat exercitationem deserunt rerum totam. Aut?
               </p>
-              <button type="button" class="btn btn-dark">Go To Blogs</button>
+              <a href="./blog.html">
+                <button type="button" class="btn btn-dark">Go To Blogs</button>
+              </a>
           </div>
           <div class="col-md-6 text-center my-3">
             <img class="w-75" src="./media/blog-writing.png" alt="">
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="d-flex flex-column align-items-center justify-content-center text-center">
           <p class="fs-2 fw-bold">Let's Talk!</p>
           <p class="mw-650">
@@ -85,15 +91,32 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.?
           </p>
           <ul class="list-unstyled d-flex flex-row">
-            <li class="px-2"><i class="bi bi-linkedin"></i></li>
-            <li class="px-2"><i class="bi bi-github"></i></li>
-            <li class="px-2"><i class="bi bi-instagram"></i></li>
+            <li class="px-2"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            <li class="px-2"><a href="#"><i class="bi bi-github"></i></a></li>
+            <li class="px-2"><a href=""><i class="bi bi-instagram"></i></a></li>
           </ul>
           <p>Or write to me <br> abc@abc</p>
         </div>
       </section>
     </main>
     
+    <footer class="bg-light pt-4 pb-2">
+      <div class="container d-flex flex-wrap">
+        <p class="fs-4 fw-bold pe-4">Sidharth Jain</p>
+        <div class="d-flex flex-grow-1 justify-content-between align-items-center flex-wrap">
+          <ul class="d-flex list-unstyled">
+            <li class="pe-2"><a href="./index.html">Home</a></li>
+            <li class="px-2"><a href="./projects.html" target="_blank">Projects</a></li>
+            <li class="px-2"><a href="./blog.html" target="_blank">Blog</a></li>
+          </ul>
+          <ul class="list-unstyled d-flex flex-row">
+            <li class="px-2"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            <li class="px-2"><a href="#"><i class="bi bi-github"></i></a></li>
+            <li class="px-2"><a href=""><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- bs js link cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
